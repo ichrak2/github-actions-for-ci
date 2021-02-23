@@ -12,7 +12,10 @@ on:
 
 jobs:
   build:
-
+      - uses: actions/upload-artifact@master
+        with:
+          name: webpack artifacts
+          path: public/
      runs-on: ubuntu-latest
      steps:
         - uses: actions/checkout@v2
