@@ -2,7 +2,8 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Node.js CI
-
+        os: [ubuntu-latest, windows-2016]
+        node-version: [12.x, 14.x]
 on:
   push:
     branches: [ main ]
